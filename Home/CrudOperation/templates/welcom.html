@@ -1,33 +1,20 @@
-
+{% extends "base.html" %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Structure</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <article>
-            <h1>HTML Structure</h1>
-            <p>This is a sample article.</p>
-        </article>
-        <aside>
-            <h2>Sidebar</h2>
-            <p>This is a sample sidebar.</p>
-        </aside>
-    </main>
-    <footer>
-        <p>&copy; 2022 My Website. All rights reserved.</p>
-    </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Form</title>
+  </head>
+  <body>
+    {%block content%}
+
+    <h1>Student Data Entry Page</h1>
+
+    <a href="loadform">Add New Data</a>
+
+    <a href="showData">Show Data</a>
+
+    {%endblock%}
+  </body>
 </html>
